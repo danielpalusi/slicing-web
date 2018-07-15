@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleku.css">
+    <title>ReadBooks</title>
+    <script type="text/javascript" src="jskita.js"></script>
+  </head>
+
+  <body>
+  	<div class='container-fluid'>
+  		<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  			<div class="container-fluid">
+  				<ul class="nav navbar-nav pull-xs-left">
+				  	<li class="nav-item dropdown">
+				      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				        Browse Category
+				      	</a>
+				      	<div class="dropdown-menu" id="kategori">
+				      	</div>
+				    </li>
+				    <li class="nav-item">
+				    	<form class="form-inline" action="#">
+		    				<input class="form-control mr-sm-2" type="text" placeholder="Search Book">
+		  				</form>
+		  			</li>
+	  			</ul>
+	  			<ul class="nav navbar-nav" class="nav navbar-nav" id="logoku">
+	  				<a class="navbar-brand" href="#">read<b>books</b></a>
+  				</ul>
+  				<ul class="nav navbar-nav pull-xs-right">
+				    <li class="nav-item">
+					  	<a class="navbar-brand" href="#">
+					    	<img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-128.png"  class="gl" alt="">
+					  	</a>
+				    </li>
+				    <li class="nav-item">
+				    	<div>
+							<button class="navbar" type="button" data-toggle="collapse" data-target="#navbar6" aria-controls="navbar6" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse" id="navbar6">
+								<div class="bg-light p-4">
+									<p class="text-muted">Menu</p>
+								</div>
+							</div>
+						</div>
+				    </li>
+				</ul>
+  			</div>
+  		</nav>
+  	</div>
+
+  	<div class='container-fluid'>
+  		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner" role="listbox">
+		    <div class="carousel-item active">
+		    	<div class="carousel-caption d-none d-md-block">
+				    <span><button type="button" class="btn btn-outline-warning" onclick="somewhere()">See Book</button></span>
+		  		</div>
+		      	<img class="d-block img-fluid" src="Trench.jpg" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="carousel-caption d-none d-md-block">
+				    <span><button type="button" class="btn btn-outline-warning" onclick="somewhere()">See Book</button></span>
+		  		</div>
+		      	<img class="d-block img-fluid" src="Trench.jpg" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="carousel-caption d-none d-md-block">
+				    <span><button type="button" class="btn btn-outline-warning" onclick="somewhere()">See Book</button></span>
+		  		</div>
+		      	<img class="d-block img-fluid" src="Trench.jpg" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+  	</div>
+
+  	<div class='container-fluid' id="wkwk">
+	  	<div class ="row">
+	  		<div class="col-md-3">
+			            <h5>Author of The Week</h5>
+				    <ul class="list-unstyled components" id="tetew">
+				    </ul>
+			            <h5>Books of The Year</h5>
+				    <ul class="list-unstyled components" id="tetew2">
+			        </ul>
+	  		</div>
+	  		<div class="col-md-9">
+	  			<div id="menuTab">
+		  			<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All Genres</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="buss-tab" data-toggle="tab" href="#buss" role="tab" aria-controls="buss" aria-selected="false">Business</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="sci-tab" data-toggle="tab" href="#sci" role="tab" aria-controls="sci" aria-selected="false">Science</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="fic-tab" data-toggle="tab" href="#fic" role="tab" aria-controls="fic" aria-selected="false">Fiction</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="phi-tab" data-toggle="tab" href="#phi" role="tab" aria-controls="phi" aria-selected="false">Philosophy</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="false">Biography</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+					  <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+						 	<div class="row" id="everythings">
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="buss" role="tabpanel" aria-labelledby="buss-tab">
+					  		<div class="row" id="onlyBusiness">
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="sci" role="tabpanel" aria-labelledby="sci-tab">
+					  		<div class="row" id="onlyScience">
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="fic" role="tabpanel" aria-labelledby="fic-tab">
+					  		<div class="row" id="onlyFiction">
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="phi" role="tabpanel" aria-labelledby="phi-tab">
+					  		<div class="row" id="onlyPhilosophy">
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+					  		<div class="row" id="onlyBiography">
+							</div>
+					  </div>
+					</div>
+				</div>
+	  		</div>
+  		</div>
+  	</div>
+
+  	<!-- ******************************************************************************************************** -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- 
+    	Popper Js
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+</html>
